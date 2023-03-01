@@ -1,0 +1,233 @@
+.aboutUs {
+    min-height: 70vh;
+    padding: 40px 120px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .aboutUsDiv {
+        border-bottom: 3px dotted #eeeeee;
+        padding-bottom: 50px;
+        .aboutUsTop {
+            position: relative;
+            margin-bottom: 60px;
+            img {
+                width: 100%;
+            }
+
+            .aboutUsTexts {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                text-align: center;
+
+                h2 {
+                    font-size: 52px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    color: #ffffff;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-style: italic;
+                    color: #ffffff;
+                }
+            }
+        }
+        .aboutUsBottom {
+            display: flex;
+            gap: 30px;
+
+            .aboutUsBottomLeft {
+                width: 50%;
+                .aboutUsBottomImg{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .aboutUsBottomRight {
+                
+                width: 50%;
+
+                .aboutUsBottomTexts {
+                    border-bottom: 3px solid #eeeeee;
+                    padding-bottom: 40px;
+                    h2 {
+                        font-size: 50px;
+                        font-weight: 700;
+                        color: #2a2a2a;
+                    }
+
+                    .exploreQuote{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                        svg{
+                            font-size: 55px;
+                            margin-right: 15px;
+                        }
+                        .exploreQuoteText{
+                            font-style: italic;
+                            font-weight: 500;
+                            color: #2a2a2a;
+                        }
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #a1a1a1;
+                    }
+                }
+                .aboutUsBottomSocials{
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 60px;
+                    a{
+                      width: 44px;
+                      height: 44px;
+                      background-color: #2a2a2a;
+                      color: #ffffff;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 50%;
+                      transition: all .5s ease;  
+                      &:hover{
+                        color: #2a2a2a;
+                        background-color: #ffffff;
+                        border: 1px solid #2a2a2a;
+                      }
+                    }
+                }
+            }
+        }
+    }
+    .aboutUsOthers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0;
+        border-bottom: 3px dotted #eeeeee;
+        .aboutUsContent{
+            text-align: center;
+            margin-bottom: 60px;
+            h2{
+                font-size: 34px;
+                font-weight: 700;
+                color: #2a2a2a;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                font-style: italic;
+                color: #a1a1a1;
+            }
+        }
+        .aboutUsImages{
+            display: flex;
+            gap: 50px;
+            .aboutUsImage{
+                .aboutUsImageTop{
+                 position: relative;
+                 height: 300px;
+                 img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                 }
+                 &:hover{
+                    .aboutUsImageHover{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                 }
+                 .aboutUsImageHover{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: rgba(0, 0, 0, 0.9);
+                    transition: all 0.5s ease;
+                    a{
+                        width: 44px;
+                        height: 44px;
+                        background-color: #ffffff;
+                        color: #2a2a2a;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        transition: all .5s ease;
+                        &:hover{
+                            color: #eeeeee;
+                            background-color: #fa0000;
+                        }
+                    }
+                 }
+                }
+                .aboutUsImageBottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h4{
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        color: #2a2a2a;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-style: italic;
+                        color: #a1a1a1;
+                    }
+                }
+            }
+        }
+    }
+    .aboutUsOthers{
+        .aboutUsImagesDiv{
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            .aboutUsImgDiv{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+                padding: 30px;
+                h4{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #2a2a2a;
+                    margin-bottom: 25px;
+                    text-align: center;
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin-bottom: 25px;
+                    color: #2a2a2a;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

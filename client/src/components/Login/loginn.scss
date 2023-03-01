@@ -1,0 +1,86 @@
+.formSign {
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formSignDiv {
+        width: 500px;
+
+        form {
+            .formSignTitle {
+                color: #2a2a2a;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+
+            .formSignGroups {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                    height: 44px;
+                    line-height: 44px;
+                    padding: 0px 15px;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 500;
+                    border-radius: 0px;
+                    border: 1px solid #7a7a7a;
+                    color: #aaaaaa;
+                    box-shadow: none;
+                    margin-bottom: 20px;
+
+                    &:focus {
+                        outline-color: #ffc107;
+                    }
+                }
+            }
+
+            button {
+                display: block;
+                margin: 25px auto;
+                background-color: #ffffff;
+                border-color: #2a2a2a;
+                color: #2a2a2a;
+                font-size: 13px;
+                padding: 12px 25px;
+                font-weight: 500;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2a2a2a;
+                    color: #ffffff;
+                }
+            }
+
+            p {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 14px;
+                a{
+                    margin: 0 5px;
+                    color: #007bff;
+                    font-style: italic;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .error{
+        color: #ff0000;
+        font-size: 14px;
+        margin: 15px 0;
+        display: block;
+        text-align: center;
+    }
+}

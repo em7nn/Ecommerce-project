@@ -1,0 +1,198 @@
+.cartItems{
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 40px 120px;
+    .cartItemsDiv{
+        width: 100%;
+        display: block;
+        .cartItemsTitle{
+            text-align: center;
+            color: #2a2a2a;
+            font-weight: 700;
+            font-size: 34px;
+            margin-bottom: 40px;
+        }
+        .cartItemsGroups{
+            display: flex;
+            gap: 40px;
+            .cartItemsLeft{
+                width: 65%;
+                table{
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0 15px;
+                    thead{
+                        text-align: center;
+                    }
+                    tbody{
+                        text-align: center;
+                        tr{
+                            td{
+                                padding: 10px;
+                                border-bottom: 3px dotted #eeeeee;
+                                .cartItemsDelete{
+                                    font-size: 25px;
+                                    color: #ff0000;
+                                    cursor: pointer;
+                                }
+                                .cartItemsName{
+                                    color: #2a2a2a;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                }
+                                .cartItemsPrice{
+                                color: #a1a1a1;
+                                font-style: 18px;
+                                font-weight: 400;  
+                                }
+                                .cartItemsPriceSubTotal{
+                                    color: #2a2a2a;
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                }
+                                .cartItemssDiv{
+                                    .cartItemsTop{
+                                        position: relative;
+                                        width: 70%;
+                                        height: 150px;
+                                        display: block;
+                                        margin: 0 auto;
+                                        &:hover{
+                                           .cartItemsTopHover{
+                                            opacity: 1;
+                                            visibility: visible;
+                                           }
+                                        }
+                                        .cartItemsTopInner{
+                                            img{
+                                                width: 100%;
+                                                height: 150px;
+                                                object-fit: cover;
+                                            }
+                                        }
+                                        .cartItemsTopHover{
+                                            position: absolute;
+                                            top: 0;
+                                            bottom: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: rgba(0, 0, 0, 0.9);
+                                            transition: all 0.5s ease;
+                                            a{
+                                                width: 30px;
+                                                height: 30px;
+                                                background-color: #ffffff;
+                                                color: #2a2a2a;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                border-radius: 50%;
+                                                transition: all .5s ease;
+                                                &:hover{
+                                                    color: #eeeeee;
+                                                    background-color: #fa0000;
+                                                }
+                                            }
+                                         }
+                                    }
+                                }
+                                .productQuantityRight{
+                                    .minus{
+                                        padding: 7px 10px 8px;
+                                        height: 39px;
+                                        background-color: #ffffff;
+                                        border: 1px solid #efefef;
+                                        cursor: pointer; 
+                                        &:hover{
+                                         background: #efefef;
+                                        }
+                                    }
+                                    .value{
+                                        width: 35px;
+                                        height: 39px;
+                                        padding: 0 5px;
+                                        text-align: center;
+                                        background-color: transparent;
+                                        border: 1px solid #efefef;
+                                        &:focus{
+                                            outline-color: #ffc107;
+                                        }
+                                        &::-webkit-outer-spin-button{
+                                            -webkit-appearance: none;
+                                            margin: 0;
+                                        }
+                                        &::-webkit-inner-spin-button{
+                                            -webkit-appearance: none;
+                                            margin: 0;
+                                        }
+                                    }
+                                    .plus{
+                                       padding: 7px 10px 8px;
+                                       height: 39px;
+                                       background-color: #ffffff;
+                                       border: 1px solid #efefef;
+                                       cursor: pointer;
+                                       transition: all 0.5s ease;
+                                       &:hover{
+                                        background: #eeeeee;
+                                       }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cartItemsRight{
+                width: 35%;
+                .cartItemsRightDiv{
+                    .cartItemsRightTitle{
+                        text-align: center;
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+                    }
+                    .cartItemsRightContent{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 3px dotted #eeeeee;
+                        padding: 30px 0px;
+                        .cartItemsRightContentLeft{
+                            .total{
+                                font-weight: bold;
+                            }
+                        }
+                        .cartItemsRightContentRight{
+                            .totalPrice{
+                                font-weight: bold;
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .checkout{
+                        display: block;
+                        margin: 50px auto;
+                        background-color: #ffffff;
+                        border-color: #2a2a2a;
+                        color: #2a2a2a;
+                        font-size: 13px;
+                        padding: 12px 25px;
+                        font-weight: 500;
+                        transition: all .3s ease;
+                        cursor: pointer;
+        
+                        &:hover {
+                            background-color: #2a2a2a;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

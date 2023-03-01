@@ -1,0 +1,49 @@
+.deleteContainer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a6e;
+
+    .deleteModel {
+        width: 500px;
+        height: 200px;
+        box-shadow: 0 0 10px #ffffff;
+        background-color: #ffffff;
+        padding: 20px 10px;
+        border-radius: 10px;
+
+        .deleteTop {
+            .deleteTitle {
+                text-align: center;
+            }
+        }
+
+        .deleteBottom {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+                button {
+                    display: block;
+                    background-color: #ffffff;
+                    border-color: #2a2a2a;
+                    color: #2a2a2a;
+                    font-size: 13px;
+                    padding: 12px 25px;
+                    font-weight: 500;
+                    transition: all .3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2a2a2a;
+                        color: #ffffff;
+                    }
+                }
+
+        }
+    }
+}

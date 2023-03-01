@@ -1,0 +1,72 @@
+.socials{
+    min-height: 100vh;
+    border-bottom: 3px dotted #eeeeee;
+    padding: 40px 120px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    .socialsDiv{
+        .socialsTop{
+            margin-bottom: 40px;
+            h2{
+            font-size: 34px;
+            font-weight: 700;
+            color: #2a2a2a;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                color: #a1a1a1;
+                font-style: italic;
+                margin-bottom: 40px;
+            }
+        }
+        .socialsBottom{
+            .socialsBottomImages{
+             display: flex;   
+             .socialsBottomImg{
+                position: relative;
+                &:hover{
+                    .socialsHover{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                img{
+                   width: 240px; 
+                   height: 100%;
+                   object-fit: cover;
+                }
+                .socialsHover{
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.85);
+                    transition: all 0.5s ease;
+                    opacity: 0;
+                    visibility: hidden;
+                    a{
+                        position: absolute;
+                        bottom: 40px;
+                        left: 15px;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                    svg{
+                        position: absolute;
+                        bottom: 15px;
+                        left: 15px; 
+                        color: #ffffff;
+                    }
+                }
+             }
+            }
+        }
+    }
+}

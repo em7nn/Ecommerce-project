@@ -1,0 +1,22 @@
+
+.accounttCloseText {
+    color: #2a2a2a;
+    font-weight: 700;
+}
+
+.closeBtn {
+    display: block;
+    background-color: #ffffff;
+    border-color: #2a2a2a;
+    color: #2a2a2a;
+    font-size: 13px;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2a2a2a;
+        color: #ffffff;
+    }
+}

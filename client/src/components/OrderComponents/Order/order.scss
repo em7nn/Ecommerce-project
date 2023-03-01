@@ -1,0 +1,111 @@
+.order{
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 80px 40px;
+    .orderTitle{
+        color: #a1a1a1;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .orderDiv{
+        display: flex;
+        justify-content: space-evenly;
+        .orderLeft{
+            .orderInfoTitle{
+                margin-bottom: 30px;
+                color: #a1a1a1;
+                font-weight: 400;
+            }
+            .orderItemssDiv{
+                width: 100%;
+                display: block;
+                margin: 0 auto 10px 0;
+                .orderItemsTop{
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    display: block;
+                    margin: 0 auto;
+                    &:hover{
+                       .orderItemsTopHover{
+                        opacity: 1;
+                        visibility: visible;
+                       }
+                    }
+                    .orderItemsTopInner{
+                        img{
+                            width: 100%;
+                            height: 250px;
+                            object-fit: cover;
+                        }
+                    }
+                    .orderItemsTopHover{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        visibility: hidden;
+                        width: 100%;
+                        height: 250px;
+                        background-color: rgba(0, 0, 0, 0.9);
+                        transition: all 0.5s ease;
+                        a{
+                            width: 30px;
+                            height: 30px;
+                            background-color: #ffffff;
+                            color: #2a2a2a;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            transition: all .5s ease;
+                            &:hover{
+                                color: #eeeeee;
+                                background-color: #fa0000;
+                            }
+                        }
+                     }
+                }
+            }
+        }
+        .orderMiddle{
+            .orderInfoTitle{
+            margin-bottom: 30px;
+            }
+            .orderInfo{
+               .orderText{
+                margin-bottom: 5px;
+                color: #a1a1a1;
+                font-weight: 400;
+                span{
+                    color: #2a2a2a;
+                    font-weight: 700;
+                }
+            } 
+            }
+            
+        }
+        .orderRight{
+            .orderInfoTitle{
+                margin-bottom: 30px;
+            }
+            .orderInfo{
+                .orderText{
+                 margin-bottom: 5px;
+                 color: #a1a1a1;
+                 font-weight: 400;
+                 span{
+                    color: #2a2a2a;
+                    font-weight: 700;
+                }
+             } 
+             }
+        }
+    }
+}

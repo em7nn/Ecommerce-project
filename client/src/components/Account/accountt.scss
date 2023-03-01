@@ -1,0 +1,254 @@
+.accountt {
+    min-height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 80px 40px;
+
+    .accounttTitle {
+        color: #2a2a2a;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .accounttSubTitle {
+        color: #a1a1a1;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+
+    }
+
+    .accounttContentTitle {
+        margin-bottom: 20px;
+        color: #a1a1a1;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    #close{
+        position: relative;
+    }
+
+    .accounttContentGroups {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .accountContentGroupsLeft {
+            .accounttContentGroup {
+                margin-bottom: 15px;
+
+                .accounttLight {
+                    margin-right: 5px;
+                }
+
+                .accounttBold {
+                    font-weight: bold;
+                    text-decoration: underline;
+
+                }
+            }
+        }
+
+        .accountContentGroupsRight {
+            img {
+                width: 256px;
+                height: 256px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .updateInfoSignDiv {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            form {
+                .updateInfoSignGroups {
+                    display: flex;
+                    flex-direction: column;
+    
+                    input {
+                        width: 100%;
+                        height: 44px;
+                        line-height: 44px;
+                        padding: 0px 15px;
+                        font-size: 14px;
+                        font-style: italic;
+                        font-weight: 500;
+                        border-radius: 0px;
+                        border: 1px solid #7a7a7a;
+                        color: #aaaaaa;
+                        box-shadow: none;
+                        margin-bottom: 20px;
+    
+                        &:focus {
+                            outline-color: #ffc107;
+                        }
+                    }
+                }
+    
+                button {
+                    display: block;
+                    margin: 25px auto;
+                    background-color: #ffffff;
+                    border-color: #2a2a2a;
+                    color: #2a2a2a;
+                    font-size: 13px;
+                    padding: 12px 25px;
+                    font-weight: 500;
+                    transition: all .3s ease;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #2a2a2a;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .updateImage{
+            width: 300px;
+            .updateImeg{
+                display: flex;
+                justify-content: center;
+                .labelImage{
+                    font-size: 50px;
+                    cursor: pointer;
+                }
+                .userImage{
+                    display: none;
+                }
+            }
+            form{
+                button {
+                    display: block;
+                    margin: 25px auto;
+                    background-color: #ffffff;
+                    border-color: #2a2a2a;
+                    color: #2a2a2a;
+                    font-size: 13px;
+                    padding: 12px 25px;
+                    font-weight: 500;
+                    transition: all .3s ease;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #2a2a2a;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .updateSignDiv {
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        form {
+            .updateSignGroups {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                    height: 44px;
+                    line-height: 44px;
+                    padding: 0px 15px;
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 500;
+                    border-radius: 0px;
+                    border: 1px solid #7a7a7a;
+                    color: #aaaaaa;
+                    box-shadow: none;
+                    margin-bottom: 20px;
+
+                    &:focus {
+                        outline-color: #ffc107;
+                    }
+                }
+            }
+
+            button {
+                display: block;
+                margin: 25px auto;
+                background-color: #ffffff;
+                border-color: #2a2a2a;
+                color: #2a2a2a;
+                font-size: 13px;
+                padding: 12px 25px;
+                font-weight: 500;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2a2a2a;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.react-tabs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #2a2a2a;
+}
+
+.react-tabs__tab-list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #2a2a2a;
+    border-bottom: none !important;
+}
+
+.react-tabs__tab {
+    height: 40px;
+    list-style: none;
+    padding: 12px 6px;
+    cursor: pointer;
+    color: #2a2a2a;
+}
+
+.react-tabs__tab--selected {
+    background: #2a2a2a !important;
+    border-color: transparent;
+    color: #ffffff !important;
+}
+
+.react-tabs__tab-panel {
+    display: none;
+    width: 300px;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+}
+
+.react-tabs__tab {
+    padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+    padding-left: 21px;
+}
+
+.panel-content {
+    text-align: center;
+}
+
+.react-tabs__tab-panel {
+    width: 100%;
+    border-left: 3px dotted #eeeeee;
+    padding: 0 100px;
+}

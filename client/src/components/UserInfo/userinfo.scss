@@ -1,0 +1,23 @@
+.accountContentGroupsLeft {
+    .accounttContentGroup {
+        margin-bottom: 15px;
+
+        .accounttLight {
+            margin-right: 5px;
+        }
+
+        .accounttBold {
+            font-weight: bold;
+            text-decoration: underline;
+
+        }
+    }
+}
+
+.accountContentGroupsRight {
+    img {
+        width: 256px;
+        height: 256px;
+        object-fit: cover;
+    }
+}
